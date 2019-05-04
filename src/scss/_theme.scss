@@ -1,0 +1,24 @@
+/** Theme.scss */
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// Custom overrides
+@import './variables';
+
+// $teal-blue: #00aaa4;
+// // $topaz: #15c9c3;
+// // $white: #fcfcfc;
+// $light-grey: #d2d3d2;
+// $dropdown-border-color: $teal-blue;
+// $dropdown-link-hover-color: $teal-blue;
+// $off-white: #f7f8f7;
+// $body-color: $white;
+// $primary: $teal-blue;
+// $secondary: $white;
+// $link-color: $primary;
+
+$input-border-color: $light-grey;
+
+@import '~bootstrap/scss/bootstrap';
