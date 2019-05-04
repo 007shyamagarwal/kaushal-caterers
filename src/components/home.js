@@ -7,7 +7,7 @@ import thumb02 from '../assets/images/thumbs/2.jpg';
 
 import full01 from '../assets/images/fulls/1.jpg';
 import full02 from '../assets/images/fulls/2.jpg';
-import './main.scss';
+import '../assets/main.scss';
 
 /* eslint-disable eslint(jsx-a11y/anchor-is-valid) */
 const DEFAULT_IMAGES = [

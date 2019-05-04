@@ -1,13 +1,11 @@
 import React from 'react';
-import './main.scss';
+import '../assets/main.scss';
 
 import Header from './atoms/Header';
-import Home from './home';
+import Home from './Home';
 
 class Template extends React.Component {
   render() {
-    // const { children } = this.props;
-
     return (
       <div>
         <Header />
@@ -17,8 +15,6 @@ class Template extends React.Component {
   }
 }
 
-Template.propTypes = {
-  // children: React.PropTypes.func
-};
+Template.propTypes = {};
 
 export default Template;
