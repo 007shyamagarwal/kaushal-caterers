@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Lightbox from 'react-images';
-
+/* eslint-disable*/
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -16,6 +16,12 @@ class Gallery extends Component {
       lightboxIsOpen: false
     });
   };
+  openLightbox = (i, e) => {
+    this.setState({
+      currentImage: i,
+      lightboxIsOpen: true
+    });
+  };
   gotoPrevious = () => {
     this.setState({
       currentImage: this.state.currentImage - 1
@@ -26,7 +32,7 @@ class Gallery extends Component {
       currentImage: this.state.currentImage + 1
     });
   };
-  gotoImage = (index) => {
+  gotoImage = index => {
     this.setState({
       currentImage: index
     });
@@ -42,12 +48,12 @@ class Gallery extends Component {
 
     if (!images) return;
 
-    images.map((obj, i) => {
+    const gallery = images.map((obj, i) => {
       return (
         <article className="6u 12u$(xsmall) work-item">
-          <a className="image fit thumb" href={obj.src} onClick={e => this.openLightbox(i, e)}>
+          <div className="image fit thumb" href={obj.src} onClick={e => this.openLightbox(i, e)}>
             <img alt="hey" src={obj.thumbnail} />
-          </a>
+          </div>
 
           <h3>{obj.caption}</h3>
           <p>{obj.description}</p>
@@ -55,7 +61,7 @@ class Gallery extends Component {
       );
     });
 
-    // return gallery;
+    return gallery;
   }
   render() {
     return (
