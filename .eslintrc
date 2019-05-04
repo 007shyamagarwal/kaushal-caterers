@@ -1,7 +1,7 @@
 {
   "extends": "airbnb",
   "parser": "babel-eslint",
-  "plugins": ["react", "jsx-a11y", "import", "react-hooks"],
+  "plugins": ["react", "jsx-a11y", "import"],
   "settings": {
     "import/resolver": {
       "webpack": {
@@ -25,7 +25,6 @@
         "avoidEscape": true
       }
     ],
-    "react-hooks/rules-of-hooks": "error",
     "react/jsx-filename-extension": [
       1,
       {
@@ -33,7 +32,6 @@
       }
     ],
     "react/prefer-stateless-function": "off",
-    "react-hooks/exhaustive-deps": "off",
     "import/no-extraneous-dependencies": "off",
     "react/no-string-refs": "off",
     "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
